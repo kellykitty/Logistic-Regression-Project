@@ -10,7 +10,7 @@ import pandas as pd
 #load data
 def load_data():
     # load csv and convert yes/no to ones and zeros
-    data = pd.read_csv("/Users/kelly/Downloads/CollegePlacement.csv")
+    data = pd.read_csv("CollegePlacement.csv")
     data["Placement"] = data["Placement"].map({"Yes": 1, "No": 0})
     data["Internship_Experience"] = data["Internship_Experience"].map({"Yes": 1, "No": 0})
 
